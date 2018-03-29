@@ -22,16 +22,18 @@ let mimeTypesToTest = allFixtureFiles.reduce((acc,x) => {
 const expectedMimeTypeSpecialCases = {
   'text/less': 'text/css',
   'text/jade': 'text/html',
-  'text/cson': 'application/json',
+  'text/pug': 'text/html',
   'text/css': 'text/css',
   'text/stylus': 'text/css',
   'text/scss': 'text/css',
   'text/sass': 'text/css',
-  'text/vue': 'application/javascript'
+  'text/cson': 'application/json',
+  'text/vue': 'application/javascript',
 };
 
 const mimeTypesWithoutSourceMapSupport = [
   'text/jade',
+  'text/pug',
   'text/cson',
   'text/css',
   'text/sass',
