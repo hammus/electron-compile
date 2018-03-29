@@ -8,7 +8,8 @@
     "prepublish": "npm run compile",
     "start": "npm run compile && electron ./test-dist/electron-smoke-test.js",
     "test": "mocha --compilers js:babel-register test/*.js",
-    "test-cov": "cross-env NODE_ENV='test' istanbul cover ./node_modules/mocha/bin/_mocha -- --compilers js:babel-register test/*.js"
+    "test-cov": "cross-env NODE_ENV='test' istanbul cover ./node_modules/mocha/bin/_mocha -- --compilers js:babel-register test/*.js",
+    "prepare": "npm run compile"
   },
   "bin": {
     "electron-compile": "lib/cli.js",
@@ -16,17 +17,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/paulcbetts/electron-compile"
+    "url": "https://github.com/hammus/electron-compile"
   },
   "keywords": [
     "electron"
   ],
-  "author": "Paul Betts <paul@paulbetts.org>",
+  "author": "Liam Whan (forked from Paul Betts <paul@paulbetts.org>)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/paulcbetts/electron-compile/issues"
+    "url": "https://github.com/hammus/electron-compile/issues"
   },
-  "homepage": "https://github.com/paulcbetts/electron-compile",
+  "homepage": "https://github.com/hammus/electron-compile",
   "main": "lib/index.js",
   "types": "types/index.d.ts",
   "engines": {
