@@ -44,7 +44,8 @@
     "rimraf": "^2.5.4",
     "rxjs": "^5.1.1",
     "spawn-rx": "^2.0.3",
-    "yargs": "^4.8.1"
+    "yargs": "^4.8.1",
+    "electron-compilers": "https://github.com/hammus/electron-compilers",
   },
   "devDependencies": {
     "asar": "^0.12.1",
@@ -60,7 +61,6 @@
     "chai-as-promised": "^5.3.0",
     "cheerio": "^0.20.0",
     "cross-env": "^3.2.4",
-    "electron-compilers": "https://github.com/hammus/electron-compilers",
     "electron-packager": "^7.5.1",
     "electron-prebuilt": "^1.3.3",
     "esdoc": "^0.4.8",
